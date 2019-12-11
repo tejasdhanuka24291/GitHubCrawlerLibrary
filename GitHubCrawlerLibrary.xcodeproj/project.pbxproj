@@ -16,6 +16,7 @@
 		02D4CA3723A0ECC2007A0C05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D4CA3523A0ECC2007A0C05 /* Main.storyboard */; };
 		02D4CA3923A0ECC3007A0C05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02D4CA3823A0ECC3007A0C05 /* Assets.xcassets */; };
 		02D4CA3C23A0ECC3007A0C05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D4CA3A23A0ECC3007A0C05 /* LaunchScreen.storyboard */; };
+		02D4CA4223A0EF62007A0C05 /* GitHubCrawlerLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D4CA4123A0EF62007A0C05 /* GitHubCrawlerLibrary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		02D4CA3823A0ECC3007A0C05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02D4CA3B23A0ECC3007A0C05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02D4CA3D23A0ECC3007A0C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02D4CA4123A0EF62007A0C05 /* GitHubCrawlerLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubCrawlerLibrary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				02D4CA1223A0EC0B007A0C05 /* GitHubCrawlerLibrary.h */,
 				02D4CA1323A0EC0B007A0C05 /* Info.plist */,
+				02D4CA4123A0EF62007A0C05 /* GitHubCrawlerLibrary.swift */,
 			);
 			path = GitHubCrawlerLibrary;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				TargetAttributes = {
 					02D4CA0E23A0EC0B007A0C05 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					02D4CA1723A0EC0B007A0C05 = {
 						CreatedOnToolsVersion = 11.0;
@@ -263,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02D4CA4223A0EF62007A0C05 /* GitHubCrawlerLibrary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +442,7 @@
 		02D4CA2423A0EC0B007A0C05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5X6YQBW57B;
@@ -453,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rakuten.GitHubCrawlerLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +468,7 @@
 		02D4CA2523A0EC0B007A0C05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5X6YQBW57B;
@@ -485,6 +493,7 @@
 		02D4CA2723A0EC0B007A0C05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5X6YQBW57B;
 				INFOPLIST_FILE = GitHubCrawlerLibraryTests/Info.plist;
@@ -503,6 +512,7 @@
 		02D4CA2823A0EC0B007A0C05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5X6YQBW57B;
 				INFOPLIST_FILE = GitHubCrawlerLibraryTests/Info.plist;
